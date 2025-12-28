@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Get Your Website | Ronest</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h2 class="logo">Ronest</h2>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/Ledo-poro" target="_blank">Github</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Get Your Website Built</h1>
+            <p>Let's create something amazing together. Tell us about your project and I'll help bring your vision to life.</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-card">
+                    <h2>Website Project Details</h2>
+                    <p class="form-subtitle">Fill out the form below and I'll get back to you within 24 hours</p>
+                    
+                    <form action="https://formspree.io/f/xovglvwk" method="POST" class="service-form">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+
+                        <!-- Website Type -->
+                        <div class="form-group">
+                            <label for="website-type">Website Type *</label>
+                            <select id="website-type" name="website-type" required>
+                                <option value="">Select a website type</option>
+                                <option value="portfolio">Portfolio</option>
+                                <option value="business">Business Website</option>
+                                <option value="ecommerce">E-Commerce Store</option>
+                                <option value="blog">Blog</option>
+                                <option value="landing-page">Landing Page</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Budget -->
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                            </select>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP (1-2 weeks)</option>
+                                <option value="soon">Soon (2-4 weeks)</option>
+                                <option value="flexible">Flexible (1-2 months)</option>
+                                <option value="not-urgent">Not Urgent</option>
+                            </select>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="form-group">
+                            <label>Features You Need</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="responsive" name="features" value="Responsive Design">
+                                    <label for="responsive">Responsive Design</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="ecommerce" name="features" value="E-Commerce">
+                                    <label for="ecommerce">E-Commerce</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="contact-form" name="features" value="Contact Form">
+                                    <label for="contact-form">Contact Form</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="seo" name="features" value="SEO Optimization">
+                                    <label for="seo">SEO Optimization</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="cms" name="features" value="CMS Integration">
+                                    <label for="cms">CMS Integration</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="blog" name="features" value="Blog">
+                                    <label for="blog">Blog</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="form-group">
+                            <label for="description">Describe Your Project *</label>
+                            <textarea id="description" name="description" placeholder="Tell me about your website idea, what it should do, and any specific requirements..." rows="6" required></textarea>
+                        </div>
+
+                        <!-- Additional Notes -->
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" placeholder="Any other details or preferences..." rows="4"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit">Send My Project Details</button>
+                        <p class="form-note">We'll review your details and contact you soon!</p>
+                    </form>
+                </div>
+
+                <!-- Side Info -->
+                <div class="info-card">
+                    <h3>Why Choose Me?</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="icon">⚡</span>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Quick turnaround without compromising quality</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">🎨</span>
+                            <div>
+                                <h4>Modern Design</h4>
+                                <p>Beautiful, responsive designs that convert</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">💻</span>
+                            <div>
+                                <h4>Full Stack</h4>
+                                <p>Front-end and back-end expertise</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">🔒</span>
+                            <div>
+                                <h4>Secure & Reliable</h4>
+                                <p>Best practices for security and performance</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="contact-info">
+                        <h3>Quick Contact</h3>
+                        <p>Prefer a quick chat?</p>
+                        <a href="../contact/index.html" class="btn-contact">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ronest. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
